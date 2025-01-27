@@ -122,9 +122,13 @@ If you have any questions or suggestions, feel free to reach out!
 - **Email**: [thiago.msbueno@gmail.com](mailto:thiago.msbueno@gmail.com)
 - **GitHub**: [thiagojoa](https://github.com/thiagojoa)
 - **Twitter**: [@ythiagomsbueno](https://twitter.com/thiagomsbueno)
-- **Linkedin**: [In/thiagomsbueno](https://www.linkedin.com/in/thiagomsbueno/))
+- **Linkedin**: [In/thiagomsbueno](https://www.linkedin.com/in/thiagomsbueno/)
 
 We're happy to help and look forward to hearing from you!
 
+---
+## **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
