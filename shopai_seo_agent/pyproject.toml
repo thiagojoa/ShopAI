@@ -1,0 +1,23 @@
+[project]
+name = "shopai_seo_agent"
+version = "0.1.0"
+description = "shopai-seo-agent using crewAI"
+authors = [{ name = "Thiago Martins Silveira Bueno", email = "thiago.msbueno@gmail.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.98.0,<1.0.0"
+]
+
+[project.scripts]
+shopai_seo_agent = "shopai_seo_agent.main:run"
+run_crew = "shopai_seo_agent.main:run"
+train = "shopai_seo_agent.main:train"
+replay = "shopai_seo_agent.main:replay"
+test = "shopai_seo_agent.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
