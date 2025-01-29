@@ -18,14 +18,13 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
-        'current_year': str(datetime.now().year)
+        'titulo': 'ALI. PRESSAO P/ SOLDA- TIPO U 10 TRAMONTINA 44016/110'
+        
     }
     
-    try:
-        ShopaiSeoAgent().crew().kickoff(inputs=inputs)
-    except Exception as e:
-        raise Exception(f"An error occurred while running the crew: {e}")
+
+    ShopaiSeoAgent().crew().kickoff(inputs=inputs)
+
 
 
 def train():
@@ -33,7 +32,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs"
+        "titulo": "ALI. PRESSAO P/ SOLDA- TIPO U 10 TRAMONTINA 44016/110"
     }
     try:
         ShopaiSeoAgent().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -56,7 +55,7 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        "topic": "AI LLMs"
+        "titulo": "ALI. PRESSAO P/ SOLDA- TIPO U 10 TRAMONTINA 44016/110"
     }
     try:
         ShopaiSeoAgent().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
