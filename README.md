@@ -69,8 +69,9 @@ The **ShopAI SEO Agent** is an intelligent tool designed to optimize e-commerce 
 
 ## **Tech Stack**  
 - **Language:** Python  
-- **AI Framework:** ShopAI  
+- **AI Framework:** Crew AI  
 - **Libraries:**  
+  
   - `requests` (API integration)  
   - `nltk` or `spaCy` (text processing)  
   - `pandas` (data manipulation)  
@@ -81,22 +82,24 @@ The **ShopAI SEO Agent** is an intelligent tool designed to optimize e-commerce 
 ## **Project Structure**  
 ```plaintext
 📂 shopai-seo-agent
-├── 📁 tasks
-│   ├── title_optimizer.py        # SEO improvements for titles
-│   ├── description_validator.py  # Validates and enhances descriptions
-│   ├── keyword_optimizer.py      # Optimizes product keywords
-│   └── __init__.py               # Module initializer
-├── 📁 data
-│   ├── sample_inputs.json        # Example API responses
-│   ├── rules_seo.json            # Custom SEO rules
-├── 📁 tests
-│   ├── test_title_optimizer.py   # Tests for title optimization
-│   ├── test_description_validator.py
-│   ├── test_keyword_optimizer.py
-├── main.py                       # Main entry point for running the agent
-├── requirements.txt              # Project dependencies
-├── README.md                     # Project documentation
-└── .gitignore                    # Git ignored files
+├── 📁 output
+│   ├── report.md                 # Output from running jobs
+├── 📁 src
+│   ├── 📁 shop_seo_agent
+│   |   ├── 📁 config
+|   |   |   ├── agents.yaml        # Configuration file for agents
+|   |   |   └── tasks.yaml         # Configuration file for tasks
+│   |   ├── 📁 tools
+|   |   |   ├── __init__.py        # Package initializer
+|   |   |   └── custom_tool.py     # Custom tool implementation
+│   |   ├── __init__.py            # Package initializer              
+│   |   ├── crew.py                # Agent crew management module            
+│   |   └── main.py                # Main script to execute tasks            
+├── 📁 tests                       # Unit and integration tests
+├── pyproject.toml                  # Project dependencies and configuration
+├── README.md                       # Project documentation
+├── LICENSE.md                      # Project license information
+└── .gitignore                      # Specifies files to be ignored by Git
 ```
 ---
 ## **Contributing**
